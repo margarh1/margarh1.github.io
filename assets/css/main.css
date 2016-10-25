@@ -1,11 +1,12 @@
 body {
-  background-color: antiquewhite;
+  background: -webkit-linear-gradient(#000030, #400000);
 }
 
 h1 {
   text-align: center;
   font-size: 48px;
   color: darkred;
+  opacity: 1;
 }
 
 footer {
