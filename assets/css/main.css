@@ -1,8 +1,3 @@
-img {
-  height: 500px;
-  width: 700px;
-}
-
 footer {
   text-align: center;
   margin: 0 auto;
@@ -23,4 +18,6 @@ li {
   background-image: url("https://static.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg");
   background-size: cover;
   background-position: center;
+  height: 300px;
+  width: 450px;
 }
