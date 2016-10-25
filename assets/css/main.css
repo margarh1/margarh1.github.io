@@ -1,12 +1,23 @@
+body {
+  background-color: antiquewhite;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  color: darkred;
+}
+
 footer {
   text-align: center;
   margin: 0 auto;
+  background-color: lightgray;
 }
 
 #page-wrapper {
   background-image: url("https://static.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg");
   background-size: cover;
   background-position: center;
-  height: 300px;
-  width: 450px;
+  height: 200px;
+  opacity: 0.5;
 }
