@@ -1,5 +1,6 @@
 body {
-  background-color: antiquewhite;
+  background: -webkit-linear-gradient(rgba(0,0,48,0.5), rgba(64,0,0,0.5));
+  background-size: cover;
 }
 
 #page-wrapper {
