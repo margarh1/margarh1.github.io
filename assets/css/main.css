@@ -11,13 +11,17 @@ body {
 h1 {
   text-align: center;
   font-size: 48px;
+  background-color: lightgray;
   color: darkred;
   opacity: 1;
 }
 
-header {
-  float: right;
-  background-color: lightskyblue;
+ul {
+  margin: 0 auto;
+}
+
+ul li {
+  display: inline-block;
 }
 
 footer {
