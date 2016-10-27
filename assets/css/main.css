@@ -51,8 +51,8 @@ h3 {
   margin: 10px;
 }
 
-footer {
-  text-align: center;
+header {
+  text-align: right;
   margin: 0 auto;
   background-color: lightgray;
 }
