@@ -1,16 +1,11 @@
 body {
-  background-color: antiquewhite;
-  background: -webkit-linear-gradient(rgba(0,0,48,0.75), rgba(64,0,0,0.75));
-  background-size: cover;
-  background-position: center;
+  background: antiquewhite;
 }
 
 #page-wrapper {
   background-image: url("https://static.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg");
   background-size: cover;
   background-position: center;
-  height: 500px;
-  opacity: 0.5;
 }
 
 h1 {
