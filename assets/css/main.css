@@ -24,16 +24,17 @@ h1 {
 }
 
 .works {
-  display: inline-block;
-  margin: 0 auto;
+  
 }
 
 ul {
-  margin: 0 auto;
+  
 }
 
 ul li {
   display: inline-block;
+  padding: 50px;
+  margin: 0 20px;
   padding: 5px;
   border: 1px solid black;
   border-radius: 20px;
