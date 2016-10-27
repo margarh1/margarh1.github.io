@@ -24,7 +24,8 @@ h1 {
 }
 
 .works {
-  
+  margin: 0 auto;
+  width: 1200px;
 }
 
 ul {
@@ -33,9 +34,10 @@ ul {
 
 ul li {
   display: inline-block;
-  padding: 50px;
-  margin: 0 20px;
-  padding: 5px;
+  height: 200px;
+  width: 300px;
+  padding: 10px;
+  margin: 15px;
   border: 1px solid black;
   border-radius: 20px;
   background-color: lightgray;
