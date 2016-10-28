@@ -17,6 +17,7 @@ nav {
 .nav-bar:hover {
   background-color: lightgray;
   opacity: 0.8;
+  font-weight: 600;
 }
 
 div {
