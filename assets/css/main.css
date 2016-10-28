@@ -7,10 +7,16 @@ nav {
 }
 
 .nav-bar {
+  border: none;
   text-align: center;
   width: 100px;
   margin: 0;
-  background-color: -webkit-radial-gradient(lightgray, rgba(250, 235, 215, 0));
+  background: -webkit-radial-gradient(lightgray, rgba(250, 235, 215, 0));
+}
+
+.nav-bar:hover {
+  background-color: lightgray;
+  opacity: 0.8;
 }
 
 div {
