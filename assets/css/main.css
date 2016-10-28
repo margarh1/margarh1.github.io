@@ -21,7 +21,10 @@ h1 {
   font-size: 48px;
   color: darkred;
   background-color: lightgray;
-  padding: 2px 9px;
+  padding: 12px 24px;
+  border: 1px solid black;
+  border-radius: 20px;
+  opacity: 0.8;
 }
 
 .works {
@@ -44,6 +47,11 @@ ul li {
   border: 1px solid black;
   border-radius: 20px;
   background-color: lightgray;
+  opacity: 0.9;
+}
+
+ul li:hover {
+  opacity: 1;
 }
 
 h3 {
