@@ -6,14 +6,11 @@ nav {
   text-align: right;
 }
 
-.nav-bar-list {
-
-}
-
 .nav-bar {
   text-align: center;
   width: 100px;
   margin: 0;
+  background-color: -webkit-radial-gradient(lightgray, rgba(250, 235, 215, 0));
 }
 
 div {
@@ -25,7 +22,7 @@ div {
   background-size: cover;
   background-position: center;
   height: 1000px;
-  margin: 40px 0 15px 0;
+  margin: 0 0 15px 0;
   position: relative;
 }
 
@@ -45,12 +42,13 @@ h1 {
   margin: 0 auto;
   width: 1200px;
   position: absolute;
-  top: 225px;
+  top: 200px;
   left: 125px;
 }
 
 ul {
   padding: 0;
+  margin: 5px;
 }
 
 ul li {
