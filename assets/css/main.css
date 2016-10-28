@@ -6,6 +6,10 @@ nav {
   text-align: right;
 }
 
+.nav-link {
+  color: black;
+}
+
 .nav-bar {
   border: none;
   text-align: center;
