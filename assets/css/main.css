@@ -6,8 +6,14 @@ nav {
   text-align: right;
 }
 
+.nav-bar-list {
+
+}
+
 .nav-bar {
-  
+  text-align: center;
+  width: 100px;
+  margin: 0;
 }
 
 div {
@@ -39,7 +45,7 @@ h1 {
   margin: 0 auto;
   width: 1200px;
   position: absolute;
-  top: 150px;
+  top: 225px;
   left: 125px;
 }
 
