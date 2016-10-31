@@ -28,13 +28,27 @@ div {
   text-align: center;
 }
 
+.project {
+  display: inline-block;
+  width: 500px;
+  padding: 10px;
+  margin: 15px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: lightgray;
+  opacity: 0.8;
+}
+
+.project:hover {
+  opacity: 1;
+}
+
 #page-wrapper {
   background-image: url("https://static.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg");
   background-size: cover;
   background-position: center;
   height: 1000px;
   margin: 0 0 15px 0;
-  position: relative;
 }
 
 h1 {
@@ -64,10 +78,8 @@ ul {
 
 ul li {
   display: inline-block;
-  width: 500px;
   padding: 10px;
   margin: 15px;
-  border: 1px solid black;
   border-radius: 20px;
   background-color: lightgray;
   opacity: 0.8;
@@ -97,7 +109,6 @@ img {
 }
 
 .contact-info {
-  border: none;
   width: 50px;
   margin: 0;
   padding: 10px 0 5px 0;
