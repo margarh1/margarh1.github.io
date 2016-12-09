@@ -13,7 +13,7 @@ $(document).ready(function() {
     var projectSource = $('#project-template').html();
     var projectTemplate = Handlebars.compile(projectSource);
     var projectHtml = projectTemplate({ repos: json });
-    console.log(projectHtml);
+    // console.log(projectHtml);
     $('.works').append(projectHtml);
   }
 
