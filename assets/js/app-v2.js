@@ -1,25 +1,23 @@
-console.log("app.js linked.");
+console.log('App.js connected');
 
 $(document).ready(function() {
-  $.ajax({
-    method: 'GET',
-    url: 'https://api.github.com/users/margarh1/repos',
-    success: onSuccess,
-    error: onError,
-    complete: console.log('Complete')
+  
+  if ($('.active').prop('id') === 'home') {
+    $('.container-fluid').css('background-color', 'transparent');
+  };
+  
+  $('[data-toggle="tooltip"]').tooltip();
+
+  $('.nav-contact').click(function() {
+    $('footer').tooltip('toggle');
   });
+
+  $('nav>div:last>ul>a').click(function() {
+    if ($(this).prop('hash') !== '#contact') {
+      $('.container-fluid:first').css('background-color', 'lightgray');
+    };
+  });
+
 });
 
-  function onSuccess(json) {
-    var projectSource = $('#project-template').html();
-    var projectTemplate = Handlebars.compile(projectSource);
-    var projectHtml = projectTemplate({ repos: json });
-    $('.row').append(projectHtml);
-  };
 
-  function onError(xhr, status, errorThrown) {
-    alert('Sorry, there was a problem!');
-    console.log('Error: ' + errorThrown);
-    console.log('Status: ' + status);
-    console.dir(xhr);
-  };

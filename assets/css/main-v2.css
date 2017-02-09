@@ -2,42 +2,14 @@ body {
   background: antiquewhite;
 }
 
-header {
-  text-align: center;
+.navbar {
+  margin-bottom: 10px;
 }
 
-h1 {
-  display: inline-block;
+footer {
   text-align: center;
-  font-size: 48px;
-  color: darkred;
+  margin: 0 auto;
   background-color: lightgray;
-  padding: 12px 24px;
-  border: 1px solid black;
-  border-radius: 20px;
-  opacity: 0.8;
-}
-
-nav {
-  text-align: right;
-}
-
-.nav-link {
-  color: black;
-}
-
-.nav-bar {
-  border: none;
-  text-align: center;
-  width: 100px;
-  margin: 0;
-  background: -webkit-radial-gradient(lightgray, rgba(250, 235, 215, 0));
-}
-
-.nav-bar:hover {
-  background-color: lightgray;
-  opacity: 0.8;
-  font-weight: 600;
 }
 
 ul {
@@ -51,68 +23,100 @@ ul li {
   margin: 15px;
   border-radius: 20px;
   background-color: lightgray;
-  opacity: 0.8;
 }
 
 ul li:hover {
   opacity: 1;
 }
 
-div {
-  text-align: center;
-}
-
-.container {
-  background-image: url('../imgs/italian-landscape-mountains-nature.jpg');
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-}
-
-.project {
-  display: inline-block;
-  width: 500px;
-  padding: 10px;
-  margin: 15px;
-  border: 1px solid black;
-  border-radius: 20px;
-  background-color: lightgray;
-  opacity: 0.8;
-}
-
-.project:hover {
-  opacity: 1;
-}
-
-h3 {
-  margin: 0 auto;
-}
-
-p {
-  margin: 10px
-}
-
-.description {
-  text-align: left;
-}
-
-footer {
-  text-align: center;
-  margin: 0 auto;
-  background-color: lightgray;
-}
-
-img {
-  height: 20px;
-}
-
-.contact-info {
+footer ul li {
   width: 50px;
   margin: 0;
   padding: 10px 0 5px 0;
   opacity: 0.5;
 }
 
-fieldset {
-  border: none;
+a {
+  color: black;
+}
+
+a:hover, a:focus {
+  background-color: none;
+  text-decoration: none;
+}
+
+nav ul li {
+  text-align: center;
+  width: 100px;
+  margin: 0;
+  background: -webkit-radial-gradient(lightgray, rgba(250, 235, 215, 0));
+  background: -o-radial-gradient(lightgray, rgba(250, 235, 215, 0));
+  background: -moz-radial-gradient(lightgray, rgba(250, 235, 215, 0));
+}
+
+nav ul li:hover {
+  background-color: lightgray;
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+img {
+  height: 20px;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+.about-me {
+  display: block;
+  text-align: center;
+}
+
+.menu-btn {
+  background-color: lightgray;
+}
+
+.icon-bar {
+  background-color: antiquewhite;
+}
+
+.jumbotron {
+  background-image: url("../imgs/italian-landscape-mountains-nature.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  padding: 24px 0;
+  margin-bottom: 15px;
+}
+
+.container-fluid {
+  background-color: lightgray;
+  height: 100%;
+  opacity: 0.8;
+  padding: 15px;
+}
+
+.container-fluid:hover {
+  opacity: 1;
+}
+
+.holding {
+  height: 537px;
+  padding: 0;
+  position: relative;
+  overflow: auto;
+}
+
+.caption {
+  text-align: center;
+}
+
+.holding p {
+  margin: 0 10px;
+}
+
+.row {
+  height: 100%;
+  margin: 0;
 }
