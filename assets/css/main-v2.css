@@ -68,6 +68,12 @@ h3 {
   margin: 10px 0;
 }
 
+.jumbotron h1 {
+  font-size: 48px;
+  color: darkred;
+  margin-top: 5px;
+}
+
 .about-me {
   display: block;
   text-align: center;
@@ -108,8 +114,16 @@ h3 {
   overflow: auto;
 }
 
+div .carousel {
+  height: 522px;
+}
+
 .caption {
   text-align: center;
+}
+
+.jumbotron p {
+  margin: 0;
 }
 
 .holding p {
@@ -120,3 +134,32 @@ h3 {
   height: 100%;
   margin: 0;
 }
+
+.home {
+  height: 537px;
+  text-align: center;
+  padding-top: 100px;
+  display: none;
+}
+
+.landing-page {
+  display: inline-block;
+  text-align: center;
+  background-color: lightgray;
+  padding: 12px 24px;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+.carousel-indicators {
+  bottom: 0;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
