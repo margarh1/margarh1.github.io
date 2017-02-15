@@ -156,7 +156,17 @@ div .carousel {
   margin-bottom: 0;
 }
 
+@media (min-device-width: 1400px) {
+  .mobile {
+    display: none;
+  }
+}
 
+@media (max-device-width: 1399px) {
+  .pc {
+    display: none;
+  }
+}
 
 
 
