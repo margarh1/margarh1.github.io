@@ -14,201 +14,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- styles -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/main-v2.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main-v1.css">
 
     <!-- scripts -->
-    <script type="text/javascript" src="vendor/js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/js/app-v2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script type="text/javascript" src="assets/js/app-v1.js"></script>
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
 
   </head>
+
   <body>
-
-    <nav class="navbar">
-      <!-- Hamburger Menu -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed menu-btn" data-toggle="collapse" data-target=".menu">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-
-      <!-- Visible Navbar -->
-      <div class="collapse navbar-collapse menu">
-        <ul class="navbar-right">
-          <a href="#about" data-toggle="tab"><li>About</li></a>
-          <a href="#projects" data-toggle="tab"><li>Projects</li></a>
-          <a href="assets/imgs/ResumevGA.pdf" target="_blank"><li>R&eacute;sum&eacute;</li></a>
-          <a href="#contact" class="nav-contact"><li>Contact</li></a>
-        </ul>
-      </div>
+  
+    <nav>
+      <ul>
+        <a class='nav-link' href='#'><li class='nav-bar'>Works</li></a>
+        <a class='nav-link' href='#'><li class='nav-bar'>Contact</li></a>
+      </ul>
     </nav>
 
-
-    <!-- Main Content -->
-    <div class="jumbotron">
-      <div class="container-fluid">
-
-        <!-- Tab Pages -->
-        <div class="tab-content">
-          <!-- Home Tab -->
-          <div role="tabpanel" class="tab-pane fade in active" id="home">
-            <div class="container-fluid holding home">
-              <div class="landing-page">
-                <h1>Margaret Ha</h1>
-                <p>Full Stack Web Developer</p>
-              </div>
-            </div>
+    <div class="container">
+      <h1>Margaret Ha</h1>
+      <div class="row">
+        <script id="project-template" type="text/x-handlebars-template">
+        {{#each repos}}
+          <div class="project"><h3>{{name}}</h3>
+          <p class="description">{{description}}
+          <p class="github-link">The code can be found <a href='{{html_url}}'>here</a>.</p>
           </div>
-
-          <!-- About Tab -->
-          <div role="tabpanel" class="tab-pane fade" id="about">
-            <div class="container-fluid holding">
-              <h3 class="about-me">A Little Bit About Me</h3>
-              <p>
-                I started in biology, Ecology and Evolutionary Biology to be exact, and aimed to go into research upon graduation. During my undergraduate career, I managed to gain a position as a lab assistant in a research lab and found that, while I enjoyed the atmosphere of the lab, I could not find any passion for the research itself.
-                <br><br>
-                Upon graduation, I moved back to the San Francisco Bay Area, which disconnected me from the network I was only just beginning to build in Irvine, and found my way to programming. I had taken a few of the introductory classes in college and found, to my surprise, that there was a lot less math than I had originally expected. It also turned out to be a lot simpler to understand than I expected and so, I turned to programming.
-                <br><br>
-                Over the course of my time at General Assembly, one of many coding bootcamps found in the San Francisco Bay Area, I realized that the things that I had loved about science in the first place--problem solving and thinking critically about the problems and situations given to you--could also be found in programming. I also managed to figure out that the problem I had had with biological research was the amount of time it required before a given problem could be solved, a problem that was much less prevalent in programming.
-                <br><br>
-                I recently completed my course at General Assembly and am looking for a job that will allow me to continue solving problems, to think critically and creatively about ways to solve a given problem, and to continue learning new technologies. In the meantime, I have projects I am working on streamlining, a language to brush up on, and ideas for additional applications that I will hopefully be able to start in the near future.
-              </p>
-            </div>
-          </div> <!-- End About Tab -->
-
-          <!-- Projects Tab -->
-          <div role="tabpanel" class="tab-pane fade" id="projects">
-            <div class="carousel slide" id="projects-carousel" data-ride="carousel">
-
-              <ol class="carousel-indicators">
-                <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#projects-carousel" data-slide-to="1"></li>
-              </ol>
-
-              <div class="carousel-inner" role="listbox">
-
-                <!-- Slide 1 -->
-                <div class="item active">
-                  <!-- Row 1 -->
-                  <div class="row">
-                    <div class="project col-xs-12 col-lg-4">
-                      <div class="thumbnail">
-                        <a href="https://ancient-falls-58314.herokuapp.com/"><img src="assets/imgs/Bucketlist.png"></a>
-                        <div class="caption">
-                          <div class="caption-title">
-                            <h3>Bucket List</h3>
-                            <a href="https://github.com/margarh1/project-1-bucketlist">Github</a> | <a href="https://ancient-falls-58314.herokuapp.com/">Heroku</a>
-                          </div>
-                          <p>MEAN stack--or JS-focused--full-stack application that records users' bucketlist items, sports functional user authentication, and allows users to view others' bucketlists.</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="project col-xs-12 col-lg-4">
-                      <div class="thumbnail">
-                        <a href="https://radiant-springs-91429.herokuapp.com/"><img src="assets/imgs/Kaizen.png"></a>
-                        <div class="caption">
-                          <div class="caption-title">
-                            <h3>Kaizen</h3>
-                            <a href="https://github.com/vladyslavkuliani/kaizen">Github</a> | <a href="https://radiant-springs-91429.herokuapp.com/">Heroku</a>
-                          </div>
-                          <p>Ruby on Rails full-stack application built to generate project workflows for project managers, based on available team members, their skill levels, and the given deadline. Indicates whether the project can be finished by the projected deadline.</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="project col-xs-12 col-lg-4">
-                      <div class="thumbnail">
-                        <a href="http://sheltered-wave-74713.herokuapp.com"><img src="assets/imgs/Character-Generator.png"></a>
-                        <div class="caption">
-                          <div class="caption-title">
-                            <h3>Character Generator</h3>
-                            <a href="https://github.com/margarh1/character-generator">Github</a> | <a href="http://sheltered-wave-74713.herokuapp.com">Heroku</a>
-                          </div>
-                          <p>Ruby on Rails full-stack application that can save 5th Edition Dungeons & Dragons characters to a user, as well as randomly generate characters.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div> <!-- End Row 1 -->
-                </div> <!-- End Slide 1 -->
-
-                <!-- Slide 2 -->
-                <div class="item">
-                  <!-- Row 2 -->
-                  <div class="row">
-                    <div class="project col-xs-12 col-lg-4">
-                      <div class="thumbnail">
-                        <a href="https://murmuring-falls-68132.herokuapp.com"><img src="assets/imgs/Wanderlust.png"></a>
-                        <div class="caption">
-                          <div class="caption-title">
-                            <h3>Wanderlust</h3>
-                            <a href="https://github.com/nixondc93/project_wanderlust">Github</a> | <a href="https://murmuring-falls-68132.herokuapp.com">Heroku</a>
-                          </div>
-                          <p>Ruby on Rails full-stack application that allows users to comment on cities and drops city markers on a map.</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="project col-xs-12 col-lg-4">
-                      <div class="thumbnail">
-                        <img src="assets/imgs/placeholder-img.png">
-                        <div class="caption">
-                          <div class="caption-title">
-                            <h3>Parsenip</h3>
-                            <a href="https://github.com/prernaanchan/parsenip">Github</a>
-                          </div>
-                          <p>FlockOS-integrated HAR analyzer built in Python for DeveloperWeek 2017 Hackathon. Checks for inefficiencies in a given project when the slash command "/parsenip" is typed into the chat.</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="project col-xs-12 col-lg-4">
-                      <div class="thumbnail">
-                        <img src="assets/imgs/placeholder-img.png">
-                        <div class="caption">
-                          <div class="caption-title">
-                            <h3>More to Come Soon!</h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> <!-- End Row 2 -->
-                </div> <!-- End Slide 2 -->
-              </div> <!-- End Carousel Inner -->
-
-              <a class="left carousel-control" href="#projects-carousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#projects-carousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-
-            </div> <!-- End Carousel -->
-          </div> <!-- End Projects Tab -->
-
-        </div> <!-- End Tabs -->
+        {{/each}}
+        </script>
       </div>
-    </div> <!-- End Main Content -->
-
-    <!-- Contact Methods -->
-    <footer data-toggle="tooltip" data-original-title="Contact info here" data-trigger="click" id="contact">
+    </div>
+    
+    <footer>
       <ul>
-        <a href="mailto:ha.margaret1@gmail.com"><li class="contact-info"><img src='assets/imgs/New_Logo_Gmail.svg.png'></li></a>
-        <a href="http://www.linkedin.com/in/margaret-ha-aa4176b5
-        "><li class="contact-info"><img src='assets/imgs/200px-Linkedin.svg.png'></li></a>
-        <a href="https://github.com/margarh1"><li class="contact-info"><img src='assets/imgs/github-154769_960_720.png'></li></a>
-        <a href="https://profiles.generalassemb.ly/margaret-ha"><li class="contact-info"><img src="assets/imgs/general-assembly-logo.png"></li></a>
+        <li class="contact-info"><a href="mailto:ha.margaret1@gmail.com"><img src='assets/imgs/New_Logo_Gmail.svg.png'></a></li>
+        <li class="contact-info"><a href="https://www.linkedin.com/in/margaret-ha-b8379b110
+        "><img src='assets/imgs/200px-Linkedin.svg.png'></a></li>
+        <li class="contact-info"><a href="https://github.com/margarh1"><img src='assets/imgs/github-154769_960_720.png'></a></li></p>
       </ul>
     </footer>
+    
+    <div class="modal fade" tabindex="-1" role="dialog" id='projectModal'>
+      <div class="modal-dialog">
+        <div class="modal-content">
 
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden='true'>&times;</span></button>
+            <h4 class="modal-title">Add Project</h4>
+          </div>
+
+          <div class="modal-body">
+            <fieldset class="form-horizontal">
+
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="name">Project Name</label>
+                <div class="col-md-8">
+                  <input name="name" type="text" class="form-control input-sm">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="description">Project Description</label>
+                <div class="col-md-8">
+                  <textarea name="description" type="text" class="form-control input-md" rows="5"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="html_url">Github Link</label>
+                <div class="col-md-8">
+                  <input name="html_url" type="text" class="form-control input-sm">
+                </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" id="saveProject">Add Project</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
   </body>
 </html>
