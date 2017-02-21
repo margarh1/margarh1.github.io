@@ -88,7 +88,7 @@ h3 {
 }
 
 .jumbotron {
-  background-image: url("../imgs/italian-landscape-mountains-nature.jpg");
+  background-image: url("../imgs/Oahu.JPG");
   background-size: cover;
   background-position: center;
   height: 600px;
@@ -99,7 +99,7 @@ h3 {
 .container-fluid {
   background-color: lightgray;
   height: 100%;
-  opacity: 0.8;
+  opacity: 0.55;
   padding: 15px;
 }
 
